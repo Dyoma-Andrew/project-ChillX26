@@ -1,0 +1,30 @@
+.hero {
+  padding-top: 160px;
+  padding-bottom: 152px;
+  background-color: gray;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.hero-title {
+  font-family: 'Sora', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: #fff;
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.hero-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #fff;
+  text-align: left;
+}
