@@ -22,15 +22,49 @@
     />
 
     <script type="module" crossorigin src="/project-ChillX26/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/project-ChillX26/assets/index-BoipikCo.css">
+    <link rel="stylesheet" crossorigin href="/project-ChillX26/assets/index-CCqWTJ50.css">
   </head>
   <body>
-    <header>header</header>
+    <header class="header">
+    <div class="container header-container">
 
+        <!-- LOGO -->
+        <a href="/" class="logo">
+            <svg class="logo-icon" width="24" height="24">
+                <use href="/img/icons.svg#icon-group"></use>
+            </svg>
+
+            <span class="logo-text">
+                handmade<br>jewelry
+            </span>
+        </a>
+
+        <!-- NAV DESKTOP -->
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="#about" class="nav-link">About us</a></li>
+                <li><a href="#benefits" class="nav-link">Benefits</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#contacts" class="nav-link">Contacts</a></li>
+            </ul>
+        </nav>
+
+        <!-- CTA -->
+        <a href="#" class="btn header-btn">Order Now</a>
+
+        <!-- BURGER -->
+        <button class="burger js-open-menu" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg width="24" height="24">
+                <use href="/img/icons.svg#icon-hero-menu"></use>
+            </svg>
+        </button>
+
+    </div>
+</header>
 
     <main>
       <section class="hero">hero</section>
-
       <section class="section about">About Us</section>
 
       <section class="sectionbenefits">Benefits</section>
@@ -45,8 +79,38 @@
 
     <footer>Footer</footer>
 
-    <div class="mob-menu">Mobile Menu</div>
+    <div class="mobile-menu">
+    <div class="mobile-menu-container">
 
+        <div class="mobile-header">
+            <a href="/" class="logo">
+                <svg width="30" height="26">
+                    <use href="/img/icons.svg#icon-group"></use>
+                </svg>
+                <span>handmade<br>jewelry</span>
+            </a>
+
+            <button class="menu-close" aria-label="Close menu">
+                <svg width="12" height="12">
+                    <use href="/img/icons.svg#icon-close-btn"></use>
+                </svg>
+            </button>
+        </div>
+
+        <nav class="mobile-nav">
+            <ul class="mobile-nav-list">
+                <li><a href="#about" class="mobile-link">About us</a></li>
+                <li><a href="#benefits" class="mobile-link">Benefits</a></li>
+                <li><a href="#gallery" class="mobile-link">Gallery</a></li>
+                <li><a href="#testimonials" class="mobile-link">Testimonials</a></li>
+                <li><a href="#contacts" class="mobile-link">Contacts</a></li>
+            </ul>
+        </nav>
+
+        <a href="#contacts" class="btn mobile-btn">Order Now</a>
+
+    </div>
+</div>
 
   </body>
 </html>
