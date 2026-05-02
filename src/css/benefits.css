@@ -1,0 +1,25 @@
+.benefits-list {
+  display: block;
+  flex-wrap: wrap;
+  gap: 32px;
+  background: #f2f2f2;
+}
+.benefits-section {
+  margin-left: 0;
+  padding-left: 0;
+}
+.benefits-title-text {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #000;
+}
+.benefits-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: #000;
+}
