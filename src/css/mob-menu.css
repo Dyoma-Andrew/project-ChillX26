@@ -25,29 +25,29 @@ body.no-scroll {
     display: flex;
     flex-direction: column;
     min-height: 100%;
-    padding: 20px;
-
+    padding: 0;
 }
 
 /* HEADER */
 .mobile-header {
+    box-sizing: border-box;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
+    gap: 0;
     width: 100%;
-
-    margin-bottom: 16px;
+    height: 72px;
+    padding: 0 12px 0 20px;
 }
 
 .mobile-logo {
     display: inline-flex;
     align-items: center;
 
-    height: 52px;
+    width: 160px;
+    height: 68px;
     line-height: 0;
 
-    width: auto;
-    max-width: 160px;
     flex-shrink: 0;
 
     transition: opacity 0.3s ease, transform 0.2s ease;
@@ -60,20 +60,21 @@ body.no-scroll {
 
 .mobile-logo-icon {
     display: block;
-    height: 100%;
-    width: auto;
-    max-width: 100%;
+    width: 160px;
+    height: 68px;
     fill: currentColor;
 }
 
 /* CLOSE */
 .menu-close {
+    box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: center;
 
-    width: 40px;
-    height: 40px;
+    width: 48px;
+    height: 48px;
+    margin-left: auto;
 
     background: none;
     border: none;
@@ -103,19 +104,32 @@ body.no-scroll {
 }
 
 /* NAV */
+.mobile-nav {
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 64px;
+    width: 100%;
+    height: 356px;
+    padding: 16px 20px 24px;
+}
 
 .mobile-nav-list {
     display: flex;
     flex-direction: column;
     gap: 24px;
-    margin-bottom: 64px;
-
     align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    height: 216px;
 }
 
 .mobile-link {
     position: relative;
-    font-size: 18px;
+    font-size: 16px;
+    line-height: 1.5;
     transition: opacity 0.3s ease;
 }
 
@@ -136,8 +150,9 @@ body.no-scroll {
 
 /* BUTTON */
 .mobile-btn {
-    margin-bottom: 20px;
+    box-sizing: border-box;
     width: 100%;
+    height: 36px;
 }
 
 /*                                                        MEDIA TABLET */
