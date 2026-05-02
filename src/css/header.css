@@ -1,19 +1,9 @@
-.container {
-    width: 100%;
-    max-width: 375px;
-
-    padding: 0 20px;
-
-    margin: 0 auto;
-}
-
-
-
 .header {
-    position: relative;
+    position: absolute;
     width: 100%;
     top: 0;
     left: 0;
+    z-index: 10;
 }
 
 .header-container {
@@ -26,13 +16,12 @@
 .logo {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
 
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .logo-icon {
-    font-size: 14px;
+    display: block;
     line-height: 1.1;
     font-weight: 500;
     transition: transform 0.3s ease;
@@ -63,11 +52,11 @@
 
 .nav-link {
     position: relative;
-    transition: 0.3s;
+    transition: opacity 0.3s ease;
 }
 
 .nav-link:hover {
-    opacity: 0.7;
+    opacity: 0.6;
 }
 
 /* BUTTON */
@@ -102,6 +91,9 @@
 .btn:focus {
     background: #fff;
     border-color: #ccc16e;
+
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
 }
 
 .btn:active {
@@ -117,9 +109,7 @@
     cursor: not-allowed;
 }
 
-.header-btn {
-    display: none;
-}
+
 
 /* BURGER */
 .burger {
@@ -128,18 +118,15 @@
     cursor: pointer;
 }
 
-@media (min-width: 768px) {
-    .container {
-        max-width: 768px;
-        padding: 0 32px;
-    }
+@media screen and (min-width: 768px) {
+
 
     .burger {
         display: none;
     }
 
     .nav {
-        display: block;
+        display: flex;
     }
 
     .header-btn {
@@ -147,17 +134,11 @@
     }
 }
 
-@media (min-width: 1440px) {
-    .container {
-        max-width: 1440px;
-        padding: 0 32px;
-    }
+@media screen and (min-width: 1440px) {
 
     .nav-list {
         gap: 32px;
     }
 
-    .header-container {
-        padding: 0 80px;
-    }
+
 }
