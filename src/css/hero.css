@@ -41,6 +41,7 @@
 @media screen and (min-width: 768px) {
   .hero {
     background-image: url(/img/header-tab.jpg);
+    padding-bottom: 435px;
   }
 
   @media screen and (min-resolution: 2x) {
@@ -49,7 +50,7 @@
     }
   }
 
-  .hero-container {
+  .hero-content {
     max-width: 513px;
     margin-left: 0;
   }
@@ -62,11 +63,25 @@
 @media screen and (min-width: 1158px) {
   .hero {
     background-image: url(/img/header.jpg);
+    padding-top: 224px;
+    padding-bottom: 428px;
   }
 
   @media screen and (min-resolution: 2x) {
     .hero {
       background-image: url(/img/header@2x.jpg);
     }
+  }
+
+  .hero-title {
+    font-size: 56px;
+  }
+
+  .hero-button {
+    width: 192px;
+  }
+
+  .hero-content {
+    max-width: 640px;
   }
 }
