@@ -18,11 +18,13 @@ function initMobileMenu() {
   const open = () => {
     menu.classList.add('is-open');
     document.body.classList.add('no-scroll');
+    openBtn.setAttribute('aria-expanded', 'true');
   };
 
   const close = () => {
     menu.classList.remove('is-open');
     document.body.classList.remove('no-scroll');
+    openBtn.setAttribute('aria-expanded', 'false');
   };
 
   openBtn.addEventListener('click', open);
