@@ -1,7 +1,16 @@
 .hero {
   padding-top: 160px;
   padding-bottom: 152px;
-  background-color: gray;
+  background-color: #2e2f42;
+  background-image: url(/img/header-mob.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (min-resolution: 2x) {
+  .hero {
+    background-image: url(/img/header-mob@2x.jpg);
+  }
 }
 
 .hero-container {
