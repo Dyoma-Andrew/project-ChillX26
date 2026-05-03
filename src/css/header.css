@@ -66,6 +66,29 @@
 
 .nav-link {
   position: relative;
+  display: inline-flex;
+  text-decoration: none;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 1px;
+  background-color: currentColor;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus-visible {
+  text-decoration: none;
+}
+
+.nav-link:hover::after,
+.nav-link:focus-visible::after {
+  width: 100%;
 }
 
 .header-btn {
@@ -92,7 +115,7 @@
     gap: 24px;
     height: 36px;
     justify-content: flex-start;
-    padding-right: 32px;
+    padding-right: 0;
   }
 
   .logo {
@@ -122,6 +145,7 @@
   .header-btn {
     display: inline-flex;
     width: 119px;
+    height: 36px;
     flex-shrink: 0;
   }
 }
@@ -157,5 +181,6 @@
   .header-btn {
     margin-left: auto;
     width: 192px;
+    height: 36px;
   }
 }
