@@ -64,33 +64,6 @@
   gap: 24px;
 }
 
-.nav-link {
-  position: relative;
-  display: inline-flex;
-  text-decoration: none;
-}
-
-.nav-link::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -4px;
-  width: 0;
-  height: 1px;
-  background-color: currentColor;
-  transition: width 0.3s ease;
-}
-
-.nav-link:hover,
-.nav-link:focus-visible {
-  text-decoration: none;
-}
-
-.nav-link:hover::after,
-.nav-link:focus-visible::after {
-  width: 100%;
-}
-
 .header-btn {
   display: none;
 }
