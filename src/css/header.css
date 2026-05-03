@@ -8,7 +8,7 @@
   left: 0;
 }
 
-.header-container {
+.header-wrap {
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -23,8 +23,8 @@
   display: inline-flex;
   align-items: center;
   gap: 24px;
-  width: 84px;
-  height: 36px;
+  width: 160px;
+  height: 68px;
   flex-shrink: 0;
 
   transition:
@@ -32,10 +32,10 @@
     opacity 0.3s ease;
 }
 
-.header-logo-icon {
+.logo-img {
   display: block;
-  width: 84px;
-  height: 36px;
+  width: 160px;
+  height: 68px;
   object-fit: contain;
   transition: transform 0.3s ease;
 }
@@ -49,7 +49,7 @@
   transform: translateY(0) scale(0.96);
 }
 
-.logo:hover .header-logo-icon {
+.logo:hover .logo-img {
   transform: rotate(-5deg) scale(1.05);
 }
 
@@ -66,56 +66,6 @@
 
 .nav-link {
   position: relative;
-  transition: 0.3s;
-}
-
-.nav-link:hover {
-  opacity: 0.7;
-}
-
-/* BUTTON */
-
-.btn {
-  box-sizing: border-box;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  padding: 6px 12px;
-  height: 36px;
-
-  font-size: 14px;
-  font-weight: 500;
-
-  background: #ccc16e;
-  border: 1px solid #ccc16e;
-  color: #191919;
-
-  cursor: pointer;
-
-  transition:
-    background 0.3s ease,
-    transform 0.2s ease,
-    box-shadow 0.3s ease;
-}
-
-.btn:hover,
-.btn:focus {
-  background: #fff;
-  border-color: #ccc16e;
-}
-
-.btn:active {
-  transform: scale(0.97);
-  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.15);
-}
-
-.btn:disabled {
-  background: #f2f2f2;
-  border-color: #d8d8d8;
-  color: #b2b2b2;
-
-  cursor: not-allowed;
 }
 
 .header-btn {
@@ -138,7 +88,7 @@
 
 /*                                                         TABLET */
 @media screen and (min-width: 768px) {
-  .header-container {
+  .header-wrap {
     gap: 24px;
     height: 36px;
     justify-content: flex-start;
@@ -151,7 +101,7 @@
     flex-shrink: 0;
   }
 
-  .header-logo-icon {
+  .logo-img {
     width: 84px;
     height: 36px;
   }
@@ -172,7 +122,6 @@
   .header-btn {
     display: inline-flex;
     width: 119px;
-    height: 36px;
     flex-shrink: 0;
   }
 }
@@ -182,10 +131,10 @@
     height: 36px;
   }
 
-  .header-container {
+  .header-wrap {
     width: 100%;
     max-width: 1440px;
-    gap: 32px;
+    gap: 24px;
     height: 36px;
     justify-content: flex-start;
     padding-left: 64px;
@@ -202,12 +151,11 @@
 
   .nav-list {
     gap: 32px;
-    width: auto;
+    width: 468px;
   }
 
   .header-btn {
     margin-left: auto;
     width: 192px;
-    height: 36px;
   }
 }
