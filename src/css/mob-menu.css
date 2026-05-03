@@ -44,8 +44,8 @@ body.no-scroll {
     display: inline-flex;
     align-items: center;
 
-    width: 160px;
-    height: 68px;
+    width: 84px;
+    height: 36px;
     line-height: 0;
 
     flex-shrink: 0;
@@ -60,9 +60,9 @@ body.no-scroll {
 
 .mobile-logo-icon {
     display: block;
-    width: 160px;
-    height: 68px;
-    fill: currentColor;
+    width: 84px;
+    height: 36px;
+    object-fit: contain;
 }
 
 /* CLOSE */

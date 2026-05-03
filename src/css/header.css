@@ -23,8 +23,8 @@
   display: inline-flex;
   align-items: center;
   gap: 24px;
-  width: 160px;
-  height: 68px;
+  width: 84px;
+  height: 36px;
   flex-shrink: 0;
 
   transition:
@@ -34,9 +34,9 @@
 
 .header-logo-icon {
   display: block;
-  width: 160px;
-  height: 68px;
-  fill: currentColor;
+  width: 84px;
+  height: 36px;
+  object-fit: contain;
   transition: transform 0.3s ease;
 }
 
@@ -178,9 +178,17 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .header {
+    height: 36px;
+  }
+
   .header-container {
+    width: 100%;
+    max-width: 1440px;
+    gap: 32px;
     height: 36px;
     justify-content: flex-start;
+    padding-left: 64px;
     padding-right: 64px;
   }
 
@@ -189,15 +197,16 @@
   }
 
   .nav {
-    margin-right: auto;
+    margin-right: 0;
   }
 
   .nav-list {
     gap: 32px;
-    width: 468px;
+    width: auto;
   }
 
   .header-btn {
+    margin-left: auto;
     width: 192px;
     height: 36px;
   }
