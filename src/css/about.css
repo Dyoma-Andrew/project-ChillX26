@@ -1,0 +1,92 @@
+@import url('https://googleapis.com');
+@import './about.css';
+
+@media screen and (min-width: 768px) {
+    .about {
+        padding: 60px 0;
+    }
+
+    .about_container {
+        display: flex;
+        flex-direction: column;
+        /* Картинка сверху, текст снизу */
+        align-items: center;
+        /* ВСЁ ПРИЖАТО ВЛЕВО, как в Figma */
+        gap: 32px;
+        width: 100%;
+        max-width: 704px;
+        margin: 0 auto;
+ /* ЭТО ВЫРОВНЯЕТ ВЕСЬ БЛОК ПО ЦЕНТРУ ЭКРАНА */
+    }
+
+    .about_thumb {
+        width: 100%;
+        max-width: 704px !important;
+        aspect-ratio: 704 / 456 !important;
+        /* Прямоугольник как в макете */
+        overflow: hidden;
+    }
+
+    .about_content {
+        width: 100%;
+        text-align: left;
+        /* Текст строго влево */
+    }
+
+    .about_title {
+        font-size: 32px;
+        margin-bottom: 24px;
+        text-align: left;
+    }
+}
+
+/* ДЕСКТОП (1200px+) */
+@media screen and (min-width: 1200px) {
+    .about_container {
+        /* Твой прошлый код */
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: center !important;
+        gap: 64px !important;
+        
+        /* ДОБАВЬ ЭТО, ЧТОБЫ НЕ ЛИПЛО К КРАЯМ */
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        margin: 0 auto !important;
+        max-width: 1200px !important;
+    }
+
+
+    .about_thumb {
+        flex: 0 0 700px !important;
+        width: 700px !important;
+        height: 500px !important;
+    }
+
+    .about_img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+    }
+
+    .about_content {
+        flex: 0 0 530px !important;
+        text-align: left !important;
+    }
+
+    .about_title {
+        font-family: 'Sora', sans-serif !important;
+        font-size: 40px !important;
+        font-weight: 600 !important;
+        line-height: 1.2;
+        margin-bottom: 24px;
+        color: #111111;
+    }
+
+    .about_text {
+        font-family: 'Inter', sans-serif !important;
+        font-size: 16px !important;
+        line-height: 1.6;
+        color: #333333;
+    }
+}

@@ -1,1 +1,51 @@
-<section class="section about">About Us</section>
+<!-- ВРЕМЕННО: удали эту строку перед тем, как делать git push -->
+<link rel="stylesheet" href="../css/styles.css">
+
+<section class="about" id="about">
+    <div class="container about_container">
+
+        <!-- Изображение с адаптацией (Retina + разные устройства) -->
+<div class="about_thumb">
+<picture>
+    <!-- Десктоп: будет показываться на экранах ОТ 768px -->
+    <source srcset="../img/crafting-process.jpg 1x, ../img/crafting-process@2x.jpg 2x" media="(min-width: 768px)">
+
+    <!-- Мобилка: всё, что меньше 768px, получит мобильную версию (укажи её имя, если она есть) -->
+    <source srcset="../img/crafting-process-phone.jpg 1x, ../img/crafting-process-phone@2x.jpg 2x" media="(max-width: 767px)">
+    <img src="../img/crafting-process.jpg" alt="Jewelry making" class="about_img">
+</picture>
+
+</div>
+        <!-- Контентная часть -->
+        <div class="about_content">
+            <h2 class="about_title">The Artistry Behind Handmade Jewelry</h2>
+            <p class="about_text">
+                Handmade jewelry began as a passion project, inspired by the beauty of nature and the desire to create
+                meaningful pieces. Each item is crafted with love, reflecting our commitment to sustainability and the
+                unique story of its maker.
+            </p>
+
+            <ul class="about_list">
+                <li class="about_item">
+                    <svg class="about_icon" width="20" height="20">
+                        <use href="../img/sprite.svg#icon-nature"></use>
+                    </svg>
+                    <span class="about_item-text">Inspired by Nature</span>
+                </li>
+                <li class="about_item">
+                    <svg class="about_icon" width="20" height="20">
+                        <use href="../img/sprite.svg#icon-heart"></use>
+                    </svg>
+                    <span class="about_item-text">Handcrafted with Love</span>
+                </li>
+                <li class="about_item">
+                    <svg class="about_icon" width="20" height="20">
+                        <use href="../img/sprite.svg#icon-story"></use>
+                    </svg>
+                    <span class="about_item-text">Every Piece Tells a Story</span>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</section>
