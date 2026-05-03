@@ -47,6 +47,10 @@
   height: auto;
 }
 
+.gallery-item:last-child {
+  margin-bottom: 0;
+}
+
 @media screen and (min-width: 768px) {
   .gallery-header {
     margin-bottom: 80px;
@@ -59,6 +63,11 @@
 
   .gallery-item {
     margin-bottom: 32px;
+  }
+
+  .gallery-item:nth-child(2),
+  .gallery-item:nth-child(4) {
+    margin-bottom: 0;
   }
 }
 
