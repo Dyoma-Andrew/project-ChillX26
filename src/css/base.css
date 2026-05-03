@@ -71,34 +71,57 @@ body {
   pointer-events: none;
 }
 
+/* .link:hover,
+.link:focus-visible {
+  text-decoration: underline;
+  outline: none;
+} */
+
 .nav-link {
+  position: relative;
   display: inline-flex;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #000;
   text-decoration: none;
-  transition:
-    color 0.3s ease,
-    opacity 0.3s ease;
+  transition: color 0.3s ease;
+  border-bottom: 1px solid transparent;
 }
 
 .nav-link:hover,
-.nav-link:focus-visible {
-  color: #000;
-  text-decoration: underline;
-  text-decoration-skip-ink: none;
-  outline: none;
+.nav-link:focus {
+  border-bottom-color: currentColor;
 }
 
 .nav-link:active {
   color: #8668c7;
-  text-decoration: none;
 }
 
 .nav-link.is-disabled,
 .nav-link[aria-disabled='true'] {
-  color: #000;
-  opacity: 0.3;
+  color: #b2b2b2;
   pointer-events: none;
 }
+
+/* .nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 1px;
+  background-color: currentColor;
+  transition: width 0.3s ease;
+} */
+
+/* .nav-link:hover,
+.nav-link:focus-visible {
+  text-decoration: none;
+} */
+
+/* .nav-link:hover::after,
+.nav-link:focus-visible::after {
+  width: 100%;
+} */
+
+/* .nav-link {
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s ease;
+} */
