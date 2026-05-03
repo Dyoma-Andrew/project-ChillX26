@@ -1,1 +1,89 @@
-<section class="section contacts">Contact Us</section>
+<section class="section contacts">
+  <div class="container">
+    <div class="contacts-header">
+      <p class="contacts-label">Connect</p>
+      <h2 class="contacts-title">Order your unique jewelry</h2>
+      <p class="contacts-descr">We’d love to hear more details from you!</p>
+    </div>
+
+    <div class="contacts-content">
+      <address class="contacts-list">
+        <div class="contacts-item">
+          <svg class="contacts-icon" width="24" height="24">
+            <use href="/img/icons.svg#icon-envelope"></use>
+          </svg>
+          <div class="contacts-box">
+            <p class="contacts-name">Email</p>
+            <a class="contacts-link" href="mailto:info@handmadejewelry.com">
+              info@handmadejewelry.com
+            </a>
+          </div>
+        </div>
+
+        <div class="contacts-item">
+          <svg class="contacts-icon" width="24" height="24">
+            <use href="/img/icons.svg#icon-phone"></use>
+          </svg>
+          <div class="contacts-box">
+            <p class="contacts-name">Phone</p>
+            <a class="contacts-link" href="tel:+15550000000">
+              +1 (555) 000-0000
+            </a>
+          </div>
+        </div>
+
+        <div class="contacts-item">
+          <svg class="contacts-icon" width="24" height="24">
+            <use href="/img/icons.svg#icon-map"></use>
+          </svg>
+          <div class="contacts-box">
+            <p class="contacts-name">Office</p>
+            <a
+              class="contacts-link"
+              href="https://www.google.com/maps?q=76-80+Oakington+Manor+Dr,+London,+UK"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              76-80 Oakington Manor Dr, London, UK
+            </a>
+          </div>
+        </div>
+      </address>
+
+      <form class="contacts-form">
+        <label class="contacts-field">
+          Name*
+          <input
+            class="contacts-input"
+            type="text"
+            name="user-name"
+            placeholder="Tony"
+            required
+          />
+        </label>
+
+        <label class="contacts-field">
+          Phone*
+          <input
+            class="contacts-input"
+            type="tel"
+            name="user-phone"
+            placeholder="+1 234 567 8900"
+            required
+          />
+        </label>
+
+        <label class="contacts-field">
+          Describe what you want
+          <textarea
+            class="contacts-textarea"
+            name="user-message"
+            placeholder="Type your message..."
+          ></textarea>
+        </label>
+
+        <button class="contacts-btn" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</section>
