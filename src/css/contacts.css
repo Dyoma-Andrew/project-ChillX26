@@ -1,3 +1,7 @@
+.contacts {
+  overflow-x: hidden;
+}
+
 .contacts-header {
   margin-bottom: 40px;
 }
@@ -27,19 +31,25 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
+  max-width: 100%;
+  text-align: left;
 }
 
 .contacts-list {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  width: 100%;
   font-style: normal;
+  text-align: left;
 }
 
 .contacts-item {
   display: flex;
   align-items: flex-start;
   gap: 12px;
+  max-width: 100%;
+  text-align: left;
 }
 
 .contacts-icon {
@@ -49,15 +59,25 @@
   fill: currentColor;
 }
 
+.contacts-box {
+  min-width: 0;
+  max-width: 100%;
+  text-align: left;
+}
+
 .contacts-name {
   margin-bottom: 8px;
   font-weight: 500;
 }
 
 .contacts-link {
+  display: inline-block;
+  max-width: 100%;
   color: currentColor;
   text-decoration: underline;
-  overflow-wrap: anywhere;
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-break: break-word;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -70,19 +90,25 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
+  width: 100%;
+  text-align: left;
 }
 
 .contacts-field {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: 8px;
+  width: 100%;
   font-size: 14px;
   line-height: 1.5;
+  text-align: left;
 }
 
 .contacts-input,
 .contacts-textarea {
   width: 100%;
+  max-width: 100%;
   border: 1px solid #d9d9d9;
   background-color: transparent;
   font-family: inherit;
@@ -102,24 +128,14 @@
   resize: none;
 }
 
-.contacts-input:hover,
-.contacts-textarea:hover {
-  border-color: #d9d9d9;
-}
-
 .contacts-input:focus,
 .contacts-textarea:focus {
   border-color: #ccc16e;
 }
 
-.contacts-input:not(:placeholder-shown),
-.contacts-textarea:not(:placeholder-shown) {
-  border-color: #d9d9d9;
-}
-
 .contacts-btn {
-  width: 100%;
-  height: 48px;
+  width: 194px;
+  height: 36px;
   border: none;
   background-color: #ccc16e;
   font-family: inherit;
@@ -138,14 +154,11 @@
   transform: scale(0.97);
 }
 
+/* TABLET */
+
 @media screen and (min-width: 768px) {
   .contacts-title {
     font-size: 48px;
-  }
-
-  .contacts-content {
-    flex-direction: column;
-    gap: 40px;
   }
 
   .contacts-list {
@@ -158,11 +171,9 @@
   .contacts-item {
     flex: 1;
   }
-
-  .contacts-btn {
-    width: 194px;
-  }
 }
+
+/* DESKTOP */
 
 @media screen and (min-width: 1158px) {
   .contacts-header {
@@ -172,7 +183,8 @@
 
   .contacts-content {
     flex-direction: row;
-    gap: 64px;
+    align-items: flex-start;
+    gap: 32px;
   }
 
   .contacts-form {
@@ -183,10 +195,10 @@
 
   .contacts-list {
     order: 2;
-    flex: 1;
+    width: calc(100% - 580px - 32px);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 32px 64px;
+    gap: 32px 48px;
     padding-top: 0;
   }
 
@@ -201,7 +213,7 @@
   }
 
   .contacts-item:nth-child(3) {
-    grid-column: 1 / -1;
+    grid-column: 1;
     grid-row: 2;
   }
 
