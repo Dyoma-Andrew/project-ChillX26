@@ -4,6 +4,7 @@
 
 .contacts-header {
   margin-bottom: 40px;
+  text-align: left;
 }
 
 .contacts-label {
@@ -27,6 +28,12 @@
   line-height: 1.5;
 }
 
+.contacts-label,
+.contacts-title,
+.contacts-descr {
+  text-align: left;
+}
+
 .contacts-content {
   display: flex;
   flex-direction: column;
@@ -45,11 +52,7 @@
 }
 
 .contacts-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  max-width: 100%;
-  text-align: left;
+  display: block;
 }
 
 .contacts-icon {
