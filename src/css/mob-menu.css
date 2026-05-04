@@ -126,11 +126,6 @@ body.no-scroll {
     height: 216px;
 }
 
-.mob-link {
-    font-size: 16px;
-    line-height: 1.5;
-}
-
 /* BUTTON */
 .mob-btn {
     box-sizing: border-box;
