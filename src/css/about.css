@@ -1,15 +1,11 @@
 @import url('https://googleapis.com');
 @import './about.css';
-/* 1. Подключаем шрифты Sora и Inter */
 @import url('https://googleapis.com');
 
-/* 2. Стили для иконок и списка */
-/* ЭТО ПРОЯВИТ ВСЕ ПУНКТЫ СПИСКА */
 .about_list {
     display: flex !important;
     flex-direction: column !important;
     gap: 20px !important;
-    /* Даст расстояние между пунктами */
     list-style: none !important;
     padding: 0 !important;
     margin-top: 32px !important;
@@ -22,12 +18,10 @@
     opacity: 1 !important;
 }
 
-/* ЭТО СДЕЛАЕТ ИКОНКИ ВИДИМЫМИ */
 .about_icon {
     width: 20px !important;
     height: 20px !important;
     fill: #111111 !important;
-    /* Цвет иконки */
     stroke: #111111 !important;
     display: block !important;
     flex-shrink: 0;
@@ -40,7 +34,6 @@
     color: #111111;
 }
 
-/* 3. Исправляем заголовок (чтобы был Sora) */
 .about_title {
     font-family: 'Sora', sans-serif !important;
     font-weight: 600;
@@ -51,14 +44,11 @@
 }
 
 @media screen and (max-width: 767px) {
-    /* МОБИЛКА (до 767px) */
         .about_container {
             display: flex;
             flex-direction: column;
             align-items: center;
-            /* ЦЕНТРИРУЕТ КАРТИНКУ И ТЕКСТ */
             padding: 0 20px;
-            /* Одинаковое пространство по бокам */
             gap: 40px;
             margin: 0 auto;
         }
@@ -66,9 +56,7 @@
         .about_thumb {
             width: 100%;
             max-width: 335px;
-            /* Размер как в Figma */
             aspect-ratio: 1 / 1;
-            /* Квадрат на телефоне */
             overflow: hidden;
         }
     
@@ -81,9 +69,7 @@
         .about_content {
             width: 100%;
             max-width: 335px;
-            /* Чтобы текст не был шире картинки */
             text-align: left;
-            /* Текст внутри блока прижат влево */
         }
     }
 
@@ -96,12 +82,10 @@
         .about_container {
             display: flex !important;
             flex-direction: column !important;
-            /* ЭТО ЦЕНТРИРУЕТ КАРТИНКУ И ТЕКСТ ОТНОСИТЕЛЬНО ДРУГ ДРУГА */
             align-items: center !important;
             gap: 32px;
             width: 100%;
             max-width: 704px;
-            /* ЭТО ЦЕНТРИРУЕТ ВЕСЬ БЛОК ПО ЦЕНТРУ ЭКРАНА */
             margin: 0 auto !important;
         }
 
@@ -114,7 +98,6 @@
 
         .about_content {
             width: 100%;
-            /* Если хочешь, чтобы текст внутри тоже был по центру, поставь center */
             text-align: left;
         }
 
@@ -122,22 +105,17 @@
             font-size: 32px;
             margin-bottom: 24px;
             text-align: left;
-            /* Заголовок будет начинаться там же, где край фото */
         }
     }
 
-/* ДЕСКТОП (1200px+) */
 @media screen and (min-width: 1200px) {
     .about_container {
-        /* Твой прошлый код */
         display: flex !important;
         flex-direction: row !important;
         justify-content: center !important;
         gap: 64px !important;
         max-width: 1158px !important;
-            /* Ширина контента из Figma */
         margin: 0 auto !important;
-            /* Центровка всей группы */
         padding: 0 20px !important;
         }
 
@@ -191,7 +169,6 @@
 
 .about_icon {
     fill: #111111;
-    /* Цвет иконки */
     flex-shrink: 0;
 }
 
