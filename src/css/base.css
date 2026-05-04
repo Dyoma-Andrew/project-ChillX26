@@ -11,7 +11,7 @@ body {
   color: #000;
   background-color: #fff;
   margin: 0;
-  padding: 0;
+  /* padding: 0; */
 }
 
 .visually-hidden {
@@ -32,7 +32,6 @@ body {
 }
 
 .btn {
-  box-sizing: border-box;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -40,30 +39,21 @@ body {
   padding: 6px 12px;
   font-size: 14px;
   font-weight: 500;
-  line-height: 1.5;
-  color: #191919;
   background-color: #ccc16e;
   border: 1px solid #ccc16e;
   cursor: pointer;
-  transition:
-    background-color 0.3s ease,
-    border-color 0.3s ease,
-    color 0.3s ease,
-    transform 0.2s ease,
-    box-shadow 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .btn:hover,
 .btn:focus-visible {
   background-color: #fff;
-  border-color: #ccc16e;
   outline: none;
 }
 
 .btn:active {
-  background-color: #b8ad58;
-  border-color: #b8ad58;
-  transform: scale(0.98);
+  background-color: #ccc16e;
+  box-shadow: inset 0 0 8px 0 rgba(0, 0, 0, 0.32);
 }
 
 .btn:disabled,
@@ -76,33 +66,17 @@ body {
 }
 
 .nav-link {
-  display: inline-flex;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #000;
-  text-decoration: none;
-  transition:
-    color 0.3s ease,
-    opacity 0.3s ease;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: all 0.3s ease;
 }
 
 .nav-link:hover,
 .nav-link:focus-visible {
-  color: #000;
-  text-decoration: underline;
-  text-decoration-skip-ink: none;
-  outline: none;
+  text-decoration-color: currentColor;
 }
 
 .nav-link:active {
   color: #8668c7;
-  text-decoration: none;
-}
-
-.nav-link.is-disabled,
-.nav-link[aria-disabled='true'] {
-  color: #000;
-  opacity: 0.3;
-  pointer-events: none;
+  text-decoration-color: transparent;
 }
