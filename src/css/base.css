@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Mulish', sans-serif;
   font-weight: 400;
@@ -7,7 +11,7 @@ body {
   color: #000;
   background-color: #fff;
   margin: 0;
-  padding: 0;
+  /* padding: 0; */
 }
 
 .visually-hidden {
@@ -25,4 +29,54 @@ body {
 
 .section {
   padding: 64px 0;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 36px;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: #ccc16e;
+  border: 1px solid #ccc16e;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover,
+.btn:focus-visible {
+  background-color: #fff;
+  outline: none;
+}
+
+.btn:active {
+  background-color: #ccc16e;
+  box-shadow: inset 0 0 8px 0 rgba(0, 0, 0, 0.32);
+}
+
+.btn:disabled,
+.btn.is-disabled {
+  color: #b2b2b2;
+  background-color: #f2f2f2;
+  border-color: #d8d8d8;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.nav-link {
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus-visible {
+  text-decoration-color: currentColor;
+}
+
+.nav-link:active {
+  color: #8668c7;
+  text-decoration-color: transparent;
 }

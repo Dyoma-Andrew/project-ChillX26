@@ -9,9 +9,9 @@ const qsa = (s, scope = document) => scope.querySelectorAll(s);
 // =========================
 function initMobileMenu() {
   const menu = qs('.mobile-menu');
-  const openBtn = qs('.burger');
-  const closeBtn = qs('.menu-close');
-  const links = qsa('.mobile-link');
+  const openBtn = qs('.js-menu-open');
+  const closeBtn = qs('.js-menu-close');
+  const links = qsa('.js-menu-link');
 
   if (!menu || !openBtn || !closeBtn) return; // guard
 
