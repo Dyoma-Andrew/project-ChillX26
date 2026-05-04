@@ -1,97 +1,60 @@
+/* HEADER */
+
 .header {
-  position: relative;
-  width: 100%;
-  height: 72px;
-  display: flex;
-  align-items: center;
-  top: 0;
-  left: 0;
+  padding: 12px 0;
 }
 
 .header-wrap {
-  box-sizing: border-box;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  gap: 0;
-  width: 100%;
-  height: 72px;
-  padding-left: 20px;
-  padding-right: 12px;
+  justify-content: space-between;
 }
 
 /* LOGO */
+
 .logo {
-  display: inline-flex;
-  align-items: center;
-  gap: 24px;
-  width: 160px;
-  height: 68px;
   flex-shrink: 0;
 }
 
 .logo-img {
-  display: block;
-  width: 160px;
-  height: 68px;
-  object-fit: contain;
+  width: 149px;
+  height: auto;
 }
 
 /* NAV */
+
 .nav {
   display: none;
 }
 
 .nav-list {
   display: flex;
-  align-items: center;
-  gap: 24px;
+  gap: 16px;
 }
+
+/* BUTTON */
 
 .header-btn {
   display: none;
 }
 
 /* BURGER */
+
 .burger {
-  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 48px;
   height: 48px;
-  margin-left: auto;
   background: none;
   border: none;
-  cursor: pointer;
 }
 
-/*                                                         TABLET */
+/* ================= TABLET ================= */
+
 @media screen and (min-width: 768px) {
-  .header {
-    height: 72px;
-    align-items: flex-start;
-  }
-
-  .header-wrap {
-    gap: 24px;
-    max-width: 768px;
-    margin: 18px auto 0;
-    height: 36px;
-    justify-content: flex-start;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-
-  .logo {
-    width: 84px;
-    height: 36px;
-    flex-shrink: 0;
-  }
-
   .logo-img {
     width: 84px;
-    height: 36px;
   }
 
   .burger {
@@ -102,52 +65,29 @@
     display: block;
   }
 
-  .nav-list {
-    gap: 16px;
-    width: 404px;
-  }
-
   .header-btn {
     display: inline-flex;
-    margin-left: auto;
-    width: 119px;
-    height: 36px;
-    flex-shrink: 0;
+  }
+
+  .header {
+    padding: 18px 0;
   }
 }
 
+/* ================= DESKTOP ================= */
+
 @media screen and (min-width: 1440px) {
-  .header {
-    height: 72px;
-    align-items: flex-start;
-  }
 
-  .header-wrap {
-    max-width: 1440px;
-    gap: 24px;
-    margin: 18px auto 0;
-    height: 36px;
-    justify-content: flex-start;
-    padding-left: 64px;
-    padding-right: 64px;
-  }
-
-  .logo {
-    margin-right: 0;
-  }
-
-  .nav {
-    margin-right: 0;
+  .header-btn {
+    margin-left: auto;
+    min-width: 192px;
   }
 
   .nav-list {
     gap: 32px;
-    width: 468px;
   }
 
-  .header-btn {
-    margin-left: auto;
-    width: 192px;
-    height: 36px;
+  .header-wrap {
+    gap: 32px;
   }
 }
