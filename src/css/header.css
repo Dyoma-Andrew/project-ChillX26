@@ -28,10 +28,6 @@
   width: 160px;
   height: 68px;
   flex-shrink: 0;
-
-  transition:
-    transform 0.3s ease,
-    opacity 0.3s ease;
 }
 
 .logo-img {
@@ -39,20 +35,6 @@
   width: 160px;
   height: 68px;
   object-fit: contain;
-  transition: transform 0.3s ease;
-}
-
-.logo:hover {
-  transform: translateY(-2px);
-  opacity: 0.8;
-}
-
-.logo:active {
-  transform: translateY(0) scale(0.96);
-}
-
-.logo:hover .logo-img {
-  transform: rotate(-5deg) scale(1.05);
 }
 
 /* NAV */
