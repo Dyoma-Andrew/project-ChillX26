@@ -9,20 +9,22 @@ const qsa = (s, scope = document) => scope.querySelectorAll(s);
 // =========================
 function initMobileMenu() {
   const menu = qs('.mobile-menu');
-  const openBtn = qs('.burger');
-  const closeBtn = qs('.menu-close');
-  const links = qsa('.mobile-link');
+  const openBtn = qs('.js-menu-open');
+  const closeBtn = qs('.js-menu-close');
+  const links = qsa('.js-menu-link');
 
   if (!menu || !openBtn || !closeBtn) return; // guard
 
   const open = () => {
     menu.classList.add('is-open');
     document.body.classList.add('no-scroll');
+    openBtn.setAttribute('aria-expanded', 'true');
   };
 
   const close = () => {
     menu.classList.remove('is-open');
     document.body.classList.remove('no-scroll');
+    openBtn.setAttribute('aria-expanded', 'false');
   };
 
   openBtn.addEventListener('click', open);

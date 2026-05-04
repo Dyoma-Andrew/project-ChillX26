@@ -1,1 +1,94 @@
-<section class="section gallery">Gallery</section>
+<section id="gallery" class="section gallery">
+  <div class="container">
+    <!-- Section Title -->
+
+    <div class="gallery-header">
+      <h2 class="gallery-title">Jewelry Showcase</h2>
+      <p class="gallery-descr">
+        Discover the beauty of our handcrafted jewelry in style.
+      </p>
+    </div>
+
+    <ul class="gallery-list">
+      <!-- Card 1 -->
+      <li class="gallery-item">
+        <picture>
+          <source
+            srcset="
+              /img/purple-bead-bracelet.jpg    1x,
+              /img/purple-bead-bracelet@2x.jpg 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              /img/purple-bead-bracelet.jpg 1x,
+              /img/purple-bead-bracelet.jpg 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <img
+            src="/img/purple-bead-bracelet.jpg"
+            alt="Jewelry 1"
+            loading="lazy"
+          />
+        </picture>
+      </li>
+
+      <!-- Card 2-->
+      <li class="gallery-item">
+        <picture>
+          <source
+            srcset="/img/amber-pendant.jpg 1x, /img/amber-pendant@2x.jpg 2x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="/img/img-2.jpg 1x, /img/img-2@2x.jpg 2x"
+            media="(max-width: 767px)"
+          />
+          <img src="/img/amber-pendant.jpg" alt="Jewelry 2" loading="lazy" />
+        </picture>
+      </li>
+
+      <!-- Card 3 -->
+      <li class="gallery-item">
+        <picture>
+          <source
+            srcset="/img/beaded-choker.jpg 1x, /img/beaded-choker@2x.jpg 2x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="/img/img-3.jpg 1x, /img/img-3@2x.jpg 2x"
+            media="(max-width: 767px)"
+          />
+          <img src="/beaded-choker.jpg" alt="Jewelry 3" loading="lazy" />
+        </picture>
+      </li>
+
+      <!-- Card 4-->
+      <li class="gallery-item">
+        <picture>
+          <source
+            srcset="
+              /img/wooden-floral-earrings.jpg    1x,
+              /img/wooden-floral-earrings@2x.jpg 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              /img/wooden-floral-earrings.jpg    1x,
+              /img/wooden-floral-earrings@2x.jpg 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <img
+            src="/wooden-floral-earrings.jpg"
+            alt="Jewelry 4"
+            loading="lazy"
+          />
+        </picture>
+      </li>
+    </ul>
+  </div>
+</section>
