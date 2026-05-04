@@ -21,7 +21,7 @@ body.no-scroll {
 
 
 /* CONTAINER */
-.mobile-menu-container {
+.mob-wrap {
     display: flex;
     flex-direction: column;
     min-height: 100%;
@@ -29,7 +29,7 @@ body.no-scroll {
 }
 
 /* HEADER */
-.mobile-header {
+.mob-head {
     box-sizing: border-box;
     display: flex;
     justify-content: flex-start;
@@ -40,7 +40,7 @@ body.no-scroll {
     padding: 0 12px 0 20px;
 }
 
-.mobile-logo {
+.mob-logo {
     display: inline-flex;
     align-items: center;
 
@@ -53,20 +53,20 @@ body.no-scroll {
     transition: opacity 0.3s ease, transform 0.2s ease;
 }
 
-.mobile-logo:hover {
+.mob-logo:hover {
     opacity: 0.7;
     transform: translateY(-1px);
 }
 
-.mobile-logo-icon {
+.mob-logo-img {
     display: block;
     width: 160px;
     height: 68px;
-    fill: currentColor;
+    object-fit: contain;
 }
 
 /* CLOSE */
-.menu-close {
+.mob-close {
     box-sizing: border-box;
     display: flex;
     align-items: center;
@@ -84,27 +84,27 @@ body.no-scroll {
     transition: opacity 0.3s ease, transform 0.2s ease;
 }
 
-.menu-close:hover {
+.mob-close:hover {
     opacity: 0.6;
 }
 
-.menu-close:active {
+.mob-close:active {
     transform: scale(0.9);
 }
 
-.menu-close-icon {
+.mob-close-icon {
     display: block;
     width: 24px;
     height: 24px;
     transition: transform 0.2s ease;
 }
 
-.menu-close:active .menu-close-icon {
+.mob-close:active .mob-close-icon {
     transform: rotate(90deg);
 }
 
 /* NAV */
-.mobile-nav {
+.mob-nav {
     box-sizing: border-box;
     display: flex;
     align-items: flex-start;
@@ -116,7 +116,7 @@ body.no-scroll {
     padding: 16px 20px 24px;
 }
 
-.mobile-nav-list {
+.mob-nav-list {
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -126,30 +126,13 @@ body.no-scroll {
     height: 216px;
 }
 
-.mobile-link {
-    position: relative;
+.mob-link {
     font-size: 16px;
     line-height: 1.5;
-    transition: opacity 0.3s ease;
-}
-
-.mobile-link::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -4px;
-    width: 0;
-    height: 2px;
-    background: #ccc16e;
-    transition: width 0.3s ease;
-}
-
-.mobile-link:focus::after {
-    width: 100%;
 }
 
 /* BUTTON */
-.mobile-btn {
+.mob-btn {
     box-sizing: border-box;
     width: 100%;
     height: 36px;
