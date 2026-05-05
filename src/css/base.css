@@ -42,7 +42,10 @@ body {
   background-color: #ccc16e;
   border: 1px solid #ccc16e;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .btn:hover,
@@ -68,7 +71,9 @@ body {
 .nav-link {
   text-decoration: underline;
   text-decoration-color: transparent;
-  transition: all 0.3s ease;
+  transition: 
+    color 0.3s ease,
+    text-decoration-color 0.3s ease;
 }
 
 .nav-link:hover,
