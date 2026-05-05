@@ -8,6 +8,7 @@
 .showcase-container {
   max-width: 375px;
   padding: 0 20px;
+  margin: 0 auto;
 }
 
 .showcase-top {
@@ -15,12 +16,36 @@
   text-align: center;
 }
 
+/* ================== TYPOGRAPHY ================== */
+
 .showcase-title {
   margin-bottom: 24px;
   font-family: 'Sora', sans-serif;
-  font-size: 36px;
+  font-weight: 400;
+  font-size: 48px;
   line-height: 1.2;
   letter-spacing: -0.01em;
+}
+
+.showcase-description {
+  font-family: 'Mulish', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.showcase-review-text {
+  margin-bottom: 24px;
+  font-family: 'Mulish', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.showcase-review-name {
+  margin-top: auto;
+  font-family: 'Mulish', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 /* ================== STRUCTURE ================== */
@@ -37,7 +62,9 @@
 
 .showcase-img {
   width: 100%;
+  height: auto;
   object-fit: cover;
+  display: block;
 }
 
 /* ================== REVIEW ================== */
@@ -53,13 +80,8 @@
 
 .showcase-stars {
   display: flex;
-  align-items: center;
   gap: 4px;
   margin-bottom: 24px;
-}
-
-.showcase-star:not(:last-child) {
-  margin-right: 4px;
 }
 
 .showcase-star {
@@ -77,23 +99,9 @@
   transform-origin: center;
 }
 
-.showcase-review-text {
-  margin-bottom: 24px;
-  font-size: 18px;
-}
-
-.showcase-review-name {
-  margin-top: auto;
-  font-weight: 600;
-}
-
 /* ================== TABLET ================== */
 
-@media screen and (min-width: 768px) and (max-width: 1439px) {
-  .showcase-section {
-    padding-bottom: 96px;
-  }
-
+@media (min-width: 768px) {
   .showcase-container {
     max-width: 768px;
     padding: 0 32px;
@@ -104,24 +112,14 @@
     margin: 0 auto 40px;
   }
 
-  .showcase-title {
-    margin-bottom: 24px;
-  }
-
   .showcase-list {
-    width: 704px;
+    max-width: 704px;
     margin: 0 auto;
-    gap: 24px;
   }
 
-  .showcase-item {
-    flex-direction: row;
-    gap: 24px;
-  }
-
+  .showcase-item,
   .showcase-images {
     flex-direction: row;
-    gap: 24px;
   }
 
   .showcase-img {
@@ -132,11 +130,6 @@
   .showcase-review {
     width: 250px;
     height: 260px;
-    padding: 32px;
-  }
-
-  .showcase-stars {
-    margin-bottom: 24px;
   }
 
   .showcase-star {
@@ -155,11 +148,7 @@
 
 /* ================== DESKTOP ================== */
 
-@media screen and (min-width: 1440px) {
-  .showcase-section {
-    padding: 64px 0;
-  }
-
+@media (min-width: 1440px) {
   .showcase-container {
     max-width: 1440px;
     padding: 0 64px;
@@ -170,21 +159,12 @@
     margin: 0 auto 80px;
   }
 
-  .showcase-title {
-    margin-bottom: 24px;
-  }
-
   .showcase-list {
     gap: 32px;
   }
 
-  .showcase-item {
-    flex-direction: row;
-    gap: 32px;
-  }
-
+  .showcase-item,
   .showcase-images {
-    flex-direction: row;
     gap: 32px;
   }
 
@@ -196,11 +176,6 @@
   .showcase-review {
     width: 640px;
     height: 260px;
-    padding: 32px;
-  }
-
-  .showcase-stars {
-    margin-bottom: 24px;
   }
 
   .showcase-star {
