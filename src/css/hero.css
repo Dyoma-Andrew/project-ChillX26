@@ -1,16 +1,13 @@
-.hero {
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
   padding-top: 160px;
   padding-bottom: 152px;
   background-color: #2e2f42;
   background-image: url(/img/header-mob.jpg);
   background-size: cover;
   background-position: center;
-}
-
-.hero-container {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
 }
 
 .hero-title {
@@ -33,19 +30,19 @@
 }
 
 @media screen and (min-resolution: 2x) {
-  .hero {
+  .hero-container {
     background-image: url(/img/header-mob@2x.jpg);
   }
 }
 
 @media screen and (min-width: 768px) {
-  .hero {
+  .hero-container {
     background-image: url(/img/header-tab.jpg);
     padding-bottom: 435px;
   }
 
   @media screen and (min-resolution: 2x) {
-    .hero {
+    .hero-container {
       background-image: url(/img/header-tab@2x.jpg);
     }
   }
@@ -60,15 +57,15 @@
   }
 }
 
-@media screen and (min-width: 1158px) {
-  .hero {
+@media screen and (min-width: 1440px) {
+  .hero-container {
     background-image: url(/img/header.jpg);
     padding-top: 224px;
     padding-bottom: 428px;
   }
 
   @media screen and (min-resolution: 2x) {
-    .hero {
+    .hero-container {
       background-image: url(/img/header@2x.jpg);
     }
   }
