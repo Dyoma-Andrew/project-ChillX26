@@ -22,7 +22,7 @@
     />
 
     <script type="module" crossorigin src="/project-ChillX26/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/project-ChillX26/assets/index-BJRFtCnU.css">
+    <link rel="stylesheet" crossorigin href="/project-ChillX26/assets/index-DwpzGkMM.css">
   </head>
   <body>
     <header class="header">
@@ -339,86 +339,97 @@
       <section class="section contacts" id="contacts">
   <div class="container">
     <div class="contacts-header">
-      <p class="contacts-label">Connect</p>
-      <h2 class="contacts-title">Order your unique jewelry</h2>
-      <p class="contacts-descr">We’d love to hear more details from you!</p>
+      <h3 class="contacts-label">Connect</h3>
+
+      <div class="contacts-headline">
+        <h2 class="contacts-title">Order your unique jewelry</h2>
+        <p class="contacts-descr">We’d love to hear more details from you!</p>
+      </div>
     </div>
 
     <div class="contacts-content">
-      <address class="contacts-list">
-        <div class="contacts-item">
-          <svg class="contacts-icon" width="32" height="32">
-            <use href="/project-ChillX26/assets/icons-D2e8-332.svg#icon-envelope"></use>
-          </svg>
-          <div class="contacts-box">
-            <p class="contacts-name">Email</p>
-            <a class="contacts-link" href="mailto:info@handmadejewelry.com">
-              info@handmadejewelry.com
-            </a>
-          </div>
-        </div>
+      <address class="contacts-address">
+        <ul class="contacts-list">
+          <li class="contacts-item">
+            <svg class="contacts-icon" width="32" height="32">
+              <use href="/project-ChillX26/assets/icons-D2e8-332.svg#icon-envelope"></use>
+            </svg>
+            <div class="contacts-box">
+              <p class="contacts-name">Email</p>
+              <a class="contacts-link" href="mailto:info@handmadejewelry.com">
+                info@handmadejewelry.com
+              </a>
+            </div>
+          </li>
 
-        <div class="contacts-item">
-          <svg class="contacts-icon" width="32" height="32">
-            <use href="/project-ChillX26/assets/icons-D2e8-332.svg#icon-phone"></use>
-          </svg>
-          <div class="contacts-box">
-            <p class="contacts-name">Phone</p>
-            <a class="contacts-link" href="tel:+15550000000">
-              +1 (555) 000-0000
-            </a>
-          </div>
-        </div>
+          <li class="contacts-item">
+            <svg class="contacts-icon" width="32" height="32">
+              <use href="/project-ChillX26/assets/icons-D2e8-332.svg#icon-phone"></use>
+            </svg>
+            <div class="contacts-box">
+              <p class="contacts-name">Phone</p>
+              <a class="contacts-link" href="tel:+15550000000">
+                +1 (555) 000-0000
+              </a>
+            </div>
+          </li>
 
-        <div class="contacts-item">
-          <svg class="contacts-icon" width="32" height="32">
-            <use href="/project-ChillX26/assets/icons-D2e8-332.svg#icon-map"></use>
-          </svg>
-          <div class="contacts-box">
-            <p class="contacts-name">Office</p>
-            <a
-              class="contacts-link"
-              href="https://www.google.com/maps?q=76-80+Oakington+Manor+Dr,+London,+UK"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              76-80 Oakington Manor Dr, London, UK
-            </a>
-          </div>
-        </div>
+          <li class="contacts-item">
+            <svg class="contacts-icon" width="32" height="32">
+              <use href="/project-ChillX26/assets/icons-D2e8-332.svg#icon-map"></use>
+            </svg>
+            <div class="contacts-box">
+              <p class="contacts-name">Office</p>
+              <a
+                class="contacts-link"
+                href="https://www.google.com/maps?q=76-80+Oakington+Manor+Dr,+London,+UK"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                76-80 Oakington Manor Dr, London, UK
+              </a>
+            </div>
+          </li>
+        </ul>
       </address>
 
       <form class="contacts-form">
-        <label class="contacts-field">
-          Name*
-          <input
-            class="contacts-input"
-            type="text"
-            name="user-name"
-            placeholder="Tony"
-            required
-          />
-        </label>
+        <label class="contacts-field" for="user-name">Name*</label>
+        <input
+          class="contacts-input"
+          id="user-name"
+          type="text"
+          name="user-name"
+          placeholder="Tony"
+          pattern="^[a-zA-Z\s\.]{5,28}$"
+          title="Name must contain 5-28 letters, spaces or dots"
+          required
+        />
+        <p class="contacts-error">Error Text</p>
 
-        <label class="contacts-field">
-          Phone*
-          <input
-            class="contacts-input"
-            type="tel"
-            name="user-phone"
-            placeholder="+1 234 567 8900"
-            required
-          />
-        </label>
+        <label class="contacts-field" for="user-phone">Phone*</label>
+        <input
+          class="contacts-input"
+          id="user-phone"
+          type="tel"
+          name="user-phone"
+          placeholder="+1 234 123 23"
+          pattern="^\+[0-9\s]{14}$"
+          title="Phone format: +1 234 123 23"
+          required
+        />
+        <p class="contacts-error">Error Text</p>
 
-        <label class="contacts-field">
+        <label class="contacts-field" for="user-message">
           Describe what you want
-          <textarea
-            class="contacts-textarea"
-            name="user-message"
-            placeholder="Type your message..."
-          ></textarea>
         </label>
+        <textarea
+          class="contacts-textarea"
+          id="user-message"
+          name="user-message"
+          placeholder="Type your message..."
+          maxlength="500"
+        ></textarea>
 
         <button class="btn contacts-btn" type="submit">Submit</button>
       </form>
@@ -450,6 +461,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 class="footer-socials-link"
+                aria-label="Facebook"
               >
                 <svg class="footer-socials-icon">
                   <use href="/project-ChillX26/assets/icons-D2e8-332.svg#icon-Facebook"></use>
@@ -463,6 +475,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 class="footer-socials-link"
+                aria-label="Instagram"
               >
                 <svg class="footer-socials-icon">
                   <use href="/project-ChillX26/assets/icons-D2e8-332.svg#icon-Instagram"></use>
@@ -476,6 +489,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 class="footer-socials-link"
+                aria-label="X"
               >
                 <svg class="footer-socials-icon">
                   <use href="/project-ChillX26/assets/icons-D2e8-332.svg#icon-X"></use>
@@ -489,6 +503,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 class="footer-socials-link"
+                aria-label="LinkedIn"
               >
                 <svg class="footer-socials-icon">
                   <use href="/project-ChillX26/assets/icons-D2e8-332.svg#icon-LinkedIn"></use>
@@ -502,6 +517,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 class="footer-socials-link"
+                aria-label="Youtube"
               >
                 <svg class="footer-socials-icon">
                   <use href="/project-ChillX26/assets/icons-D2e8-332.svg#icon-Youtube"></use>
