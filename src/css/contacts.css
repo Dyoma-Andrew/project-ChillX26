@@ -56,8 +56,6 @@
 }
 
 .contacts-icon {
-  width: 24px;
-  height: 24px;
   flex-shrink: 0;
   fill: currentColor;
 }
@@ -139,22 +137,9 @@
 .contacts-btn {
   width: 194px;
   height: 36px;
-  border: none;
-  background-color: #ccc16e;
-  font-family: inherit;
-  cursor: pointer;
   transition:
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     transform 200ms ease;
-}
-
-.contacts-btn:hover,
-.contacts-btn:focus {
-  background-color: #b8ad5f;
-}
-
-.contacts-btn:active {
-  transform: scale(0.97);
 }
 
 /* TABLET */
