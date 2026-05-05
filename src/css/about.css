@@ -88,6 +88,12 @@
 }
 
 @media screen and (min-width: 1440px) {
+
+.about_content {
+    max-width: 640px; /* Беремо точну цифру з Figma */
+    width: 100%;      /* Щоб на менших екранах блок був гнучким */
+  }
+
   .about_container {
     flex-direction: row;
     justify-content: center;
