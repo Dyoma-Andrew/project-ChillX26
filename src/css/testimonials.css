@@ -148,7 +148,7 @@
 
 /* ================== DESKTOP ================== */
 
-@media (min-width: 1440px) {
+@media screen and (min-width: 1440px) {
   .showcase-container {
     max-width: 1440px;
     padding: 0 64px;
@@ -160,22 +160,34 @@
   }
 
   .showcase-list {
+    max-width: 1312px;
+    margin: 0 auto;
     gap: 32px;
   }
 
   .showcase-item,
   .showcase-images {
+    display: flex;
+    flex-direction: row;
     gap: 32px;
+  }
+
+  .showcase-images {
+    flex-shrink: 0;
   }
 
   .showcase-img {
     width: 304px;
     height: 260px;
+    flex-shrink: 0;
+    object-fit: cover;
   }
 
   .showcase-review {
     width: 640px;
     height: 260px;
+    padding: 32px;
+    flex-shrink: 0;
   }
 
   .showcase-star {
