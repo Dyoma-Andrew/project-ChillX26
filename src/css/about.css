@@ -29,17 +29,33 @@
   width: 100%;
 }
 
+.about_item::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-leaf::before {
+  background-image: url('/img/leaf.svg');
+}
+
+.icon-heart::before {
+  background-image: url('/img/heart.svg');
+}
+
+.icon-book::before {
+  background-image: url('/img/book.svg');
+}
+
 .about_img {
   width: 100%;
   height: auto;
   object-fit: cover;
-}
-
-.about_icon {
-  width: 24px;
-  height: 24px;
-  fill: #000;
-  flex-shrink: 0;
 }
 
 .about_text {
@@ -88,6 +104,12 @@
 }
 
 @media screen and (min-width: 1440px) {
+
+.about_content {
+    max-width: 640px; 
+    width: 100%;     
+  }
+
   .about_container {
     flex-direction: row;
     justify-content: center;
