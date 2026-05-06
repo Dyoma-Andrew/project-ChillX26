@@ -267,7 +267,7 @@
         </div>
 
         <div class="showcase-review">
-          <div class="showcase-stars" aria-label="Rating 4 out of 5">
+          <div class="showcase-stars">
             <svg class="showcase-star">
               <use href="/project-ChillX26/assets/icons-D2e8-332.svg#icon-star-fiiled"></use>
             </svg>
@@ -294,7 +294,7 @@
 
       <li class="showcase-item">
         <div class="showcase-review">
-          <div class="showcase-stars" aria-label="Rating 5 out of 5">
+          <div class="showcase-stars">
             <svg class="showcase-star">
               <use href="/project-ChillX26/assets/icons-D2e8-332.svg#icon-star-fiiled"></use>
             </svg>
@@ -336,6 +336,7 @@
     </ul>
   </div>
 </section>
+
       <section class="section contacts" id="contacts">
   <div class="container">
     <div class="contacts-header">
@@ -405,7 +406,9 @@
           title="Name must contain 5-28 letters, spaces or dots"
           required
         />
-        <p class="contacts-error">Error Text</p>
+        <p class="contacts-error">
+          Name must contain 5-28 letters, spaces or dots
+        </p>
 
         <label class="contacts-field" for="user-phone">Phone*</label>
         <input
@@ -413,12 +416,12 @@
           id="user-phone"
           type="tel"
           name="user-phone"
-          placeholder="+1 234 123 23"
+          placeholder="+1 234 567 8900"
           pattern="^\+[0-9\s]{14}$"
-          title="Phone format: +1 234 123 23"
+          title="Phone format: +1 234 567 8900"
           required
         />
-        <p class="contacts-error">Error Text</p>
+        <p class="contacts-error">Phone format: +1 234 567 8900</p>
 
         <label class="contacts-field" for="user-message">
           Describe what you want
