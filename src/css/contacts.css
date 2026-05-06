@@ -11,6 +11,7 @@
   margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.5;
+  font-weight: 600;
 }
 
 .contacts-title {
@@ -117,7 +118,7 @@
   color: #8c0000;
 }
 
-.contacts-input:not(:placeholder-shown):invalid+.contacts-error {
+.contacts-input:not(:placeholder-shown):invalid + .contacts-error {
   display: block;
 }
 
@@ -194,5 +195,4 @@
   .contacts-btn {
     width: 192px;
   }
-
 }
